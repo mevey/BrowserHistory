@@ -17,4 +17,10 @@ public class BrowserHistoryTest {
         bh.visit("abc.com");
         assertEquals(bh.historySize(), 1);
     }
+
+    @Test
+    public void historySizeShouldBeZeroAfterClearingHistory() {
+        bh.clearHistory();
+        assertEquals(bh.historySize(), 0);
+    }
 }

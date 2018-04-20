@@ -19,4 +19,8 @@ public class BrowserHistory {
     public int historySize() {
         return history.size();
     }
+
+    public void clearHistory() {
+        this.history.clear();
+    }
 }
